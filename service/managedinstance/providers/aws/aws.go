@@ -136,9 +136,9 @@ type BlockDeviceMapping struct {
 
 type EBS struct {
 	Encrypted           *bool   `json:"encrypted,omitempty"`
-	Iops                *int    `json:"iops,omitempty"`
-	KmsKeyId            *string `json:"kmsKeyId,omitempty"`
-	SnapshotId          *string `json:"snapshotId,omitempty"`
+	IOPS                *int    `json:"iops,omitempty"`
+	KmsKeyID            *string `json:"kmsKeyId,omitempty"`
+	SnapshotID          *string `json:"snapshotId,omitempty"`
 	VolumeType          *string `json:"volumeType,omitempty"`
 	DeleteOnTermination *bool   `json:"deleteOnTermination,omitempty"`
 	VolumeSize          *int    `json:"volumeSize,omitempty"`
@@ -1032,21 +1032,21 @@ func (o *EBS) SetEncrypted(v *bool) *EBS {
 }
 
 func (o *EBS) SetIops(v *int) *EBS {
-	if o.Iops = v; o.Iops == nil {
+	if o.IOPS = v; o.IOPS == nil {
 		o.nullFields = append(o.nullFields, "Iops")
 	}
 	return o
 }
 
 func (o *EBS) SetKmsKeyId(v *string) *EBS {
-	if o.KmsKeyId = v; o.KmsKeyId == nil {
+	if o.KmsKeyID = v; o.KmsKeyID == nil {
 		o.nullFields = append(o.nullFields, "KmsKeyId")
 	}
 	return o
 }
 
 func (o *EBS) SetSnapshotId(v *string) *EBS {
-	if o.SnapshotId = v; o.SnapshotId == nil {
+	if o.SnapshotID = v; o.SnapshotID == nil {
 		o.nullFields = append(o.nullFields, "SnapshotId")
 	}
 	return o
