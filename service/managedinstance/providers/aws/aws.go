@@ -1031,7 +1031,7 @@ func (o *EBS) SetEncrypted(v *bool) *EBS {
 	return o
 }
 
-func (o *EBS) SetIops(v *int) *EBS {
+func (o *EBS) SetIOPS(v *int) *EBS {
 	if o.IOPS = v; o.IOPS == nil {
 		o.nullFields = append(o.nullFields, "Iops")
 	}
